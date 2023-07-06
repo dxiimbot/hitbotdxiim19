@@ -80,7 +80,7 @@ id : {user_idnc}
 				n = ''.join(random.choice(aaaa)for i in range(32))
 				token = bbb + bb + ':' + b + n
 				response=requests.get(url=f"https://api.telegram.org/bot{token}/getme").json()
-				if str('result') in res:
+				if str('result') in response:
 					result = response['result']
 					id = result['id']
 					is_bot = result['is_bot']
