@@ -4,15 +4,11 @@ import datetime
 
 import requests
 
-import gdolib
-
 import random
 
 import telebot
 
 import threading
-
-from AegosPy import *
 
 from telebot import *
 
