@@ -28,8 +28,6 @@ import uuid
 
 import re
 
-import mechanize
-
 from user_agent import generate_user_agent
 
 #now = datetime.datetime.today()
