@@ -4,8 +4,6 @@ import datetime
 
 import requests
 
-import AegosPy
-
 import gdolib
 
 import random
