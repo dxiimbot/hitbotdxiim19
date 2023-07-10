@@ -1008,6 +1008,7 @@ def ali(z):
   else:
    bma +=1
    allma +=1
+break
   with open(filename, 'r') as dc:
    allline = dc.readlines()
    all_line = len(allline)
